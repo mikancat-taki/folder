@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: virtualfolder
+    env: node
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 22.11.0
